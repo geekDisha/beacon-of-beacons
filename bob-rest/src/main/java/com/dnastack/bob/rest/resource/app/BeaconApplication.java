@@ -20,7 +20,7 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
- */
+ 
 package com.dnastack.bob.rest.resource.app;
 
 import com.dnastack.bob.rest.resource.AllleleResource;
@@ -38,12 +38,12 @@ import java.util.Set;
 import javax.ws.rs.ApplicationPath;
 import javax.ws.rs.core.Application;
 
-/**
+*//**
  * REST application.
  *
  * @author Miroslav Cupak (mirocupak@gmail.com)
  * @version 1.0
- */
+ *//*
 @ApplicationPath("/rest")
 public class BeaconApplication extends Application {
 
@@ -52,3 +52,4 @@ public class BeaconApplication extends Application {
         return new HashSet<>(Arrays.asList(RestEndPointResource.class, BeaconResource.class, BeaconResponseResource.class, ReferenceResource.class, ChromosomeResource.class, AllleleResource.class, LoggingFilter.class, CORSFilter.class, ExceptionHandler.class));
     }
 }
+*/

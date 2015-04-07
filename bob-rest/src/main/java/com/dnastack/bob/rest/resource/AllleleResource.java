@@ -34,6 +34,10 @@ import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
+import com.wordnik.swagger.annotations.Api;
+import com.wordnik.swagger.annotations.ApiOperation;
+import com.wordnik.swagger.annotations.ApiParam;
+
 /**
  * Allele rest resource.
  *
@@ -41,12 +45,14 @@ import javax.ws.rs.core.MediaType;
  * @version 1.0
  */
 @Path("/alleles")
+@Api( value = "/alleles", description = "Get the list of all possible alleles" )
 @Produces({MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML, MediaType.TEXT_PLAIN})
 @RequestScoped
 @Named
 public class AllleleResource {
 
     @GET
+    @ApiOperation(value="Alleles Print",response=ItemWrapper.class)
     public Collection<ItemWrapper<String>> showAll() {
         List<ItemWrapper<String>> vals = new ArrayList<>();
         vals.add(new ItemWrapper<>("A"));
